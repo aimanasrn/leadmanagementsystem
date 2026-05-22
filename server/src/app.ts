@@ -1,5 +1,6 @@
 import express from "express";
 import { authRouter } from "./modules/auth/auth.routes";
+import { leadsRouter } from "./modules/leads/leads.routes";
 
 export const app = express();
 
@@ -8,3 +9,4 @@ app.get("/health", (_req, res) => {
   res.json({ status: "ok" });
 });
 app.use("/auth", authRouter);
+app.use("/leads", leadsRouter);
