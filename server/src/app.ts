@@ -3,6 +3,7 @@ import { authRouter } from "./modules/auth/auth.routes";
 import { captureRouter } from "./modules/capture/capture.routes";
 import { importsRouter } from "./modules/imports/imports.routes";
 import { leadsRouter } from "./modules/leads/leads.routes";
+import { tasksRouter } from "./modules/tasks/tasks.routes";
 
 export const app = express();
 
@@ -14,3 +15,4 @@ app.use("/auth", authRouter);
 app.use("/leads", leadsRouter);
 app.use("/imports", importsRouter);
 app.use("/capture", captureRouter);
+app.use("/tasks", tasksRouter);
