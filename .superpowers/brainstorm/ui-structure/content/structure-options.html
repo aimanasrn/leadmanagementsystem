@@ -1,0 +1,66 @@
+<h2>Choose A Structural Direction</h2>
+<p class="subtitle">This is about page architecture first: navigation, hierarchy, and how the CRM feels on desktop and mobile.</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">A. Workspace Sidebar</div>
+        <div class="mockup-body">
+          <div class="mock-nav">Brand | Search | Alerts | Profile</div>
+          <div style="display:flex; gap:12px; margin-top:12px;">
+            <div class="mock-sidebar" style="width:28%;">Leads<br>Inbox<br>Imports<br>Admin</div>
+            <div class="mock-content" style="flex:1;">
+              KPI strip<br><br>
+              Lead board / list<br><br>
+              Detail drawer or nested panel
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Workspace Sidebar</h3>
+      <p>Best for a CRM feel. Persistent left navigation on desktop, collapses into a mobile sheet.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">B. Command Topbar</div>
+        <div class="mockup-body">
+          <div class="mock-nav">Brand | Leads | Imports | Admin | Search | New Lead</div>
+          <div style="margin-top:12px;" class="mock-content">
+            Hero summary row<br><br>
+            Filter chips<br><br>
+            Main table and detail content stacked
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Command Topbar</h3>
+      <p>Cleaner and lighter. Easier to build, but feels less like an operational workspace.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">C. Split Operations View</div>
+        <div class="mockup-body">
+          <div class="mock-nav">Brand | Pipeline | Tasks | Imports</div>
+          <div style="display:flex; gap:12px; margin-top:12px;">
+            <div class="mock-content" style="width:52%;">Lead queue / pipeline</div>
+            <div class="mock-content" style="flex:1;">Live lead detail and task panel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Split Operations View</h3>
+      <p>Most distinctive and efficient for active lead handling, but higher complexity and tighter responsive constraints.</p>
+    </div>
+  </div>
+</div>
